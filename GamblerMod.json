@@ -1,0 +1,11 @@
+{
+  "id": "GamblerMod",
+  "name": "GamblerMod",
+  "author": "TrueSyan",
+  "description": "Let's go gambling!!!",
+  "version": "v0.0.0",
+  "has_pck": true,
+  "has_dll": true,
+  "dependencies": ["BaseLib"],
+  "affects_gameplay": true
+}

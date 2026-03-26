@@ -1,0 +1,16 @@
+{
+  "GAMBLERMOD-GAMBLER_MOD.aromaPrinciple": "Lore",
+  "GAMBLERMOD-GAMBLER_MOD.banter.alive.endTurnPing": "Co-op hurry up end turn ping message",
+  "GAMBLERMOD-GAMBLER_MOD.banter.dead.endTurnPing": "...",
+  "GAMBLERMOD-GAMBLER_MOD.cardsModifierDescription": "__ cards will now appear in rewards and shops.",
+  "GAMBLERMOD-GAMBLER_MOD.cardsModifierTitle": "__ Cards",
+  "GAMBLERMOD-GAMBLER_MOD.description": "Character Selection\nScreen Description",
+  "GAMBLERMOD-GAMBLER_MOD.eventDeathPrevention": "Co-op survival line",
+  "GAMBLERMOD-GAMBLER_MOD.goldMonologue": "Line spoken when obtaining a large amount of gold",
+  "GAMBLERMOD-GAMBLER_MOD.possessiveAdjective": "his/her/its",
+  "GAMBLERMOD-GAMBLER_MOD.pronounObject": "him/her/it",
+  "GAMBLERMOD-GAMBLER_MOD.pronounPossessive": "his/hers/its",
+  "GAMBLERMOD-GAMBLER_MOD.pronounSubject": "he/she/it",
+  "GAMBLERMOD-GAMBLER_MOD.title": "The GamblerMod",
+  "GAMBLERMOD-GAMBLER_MOD.titleObject": "The GamblerMod"
+}
