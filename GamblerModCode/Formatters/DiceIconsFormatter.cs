@@ -1,0 +1,53 @@
+﻿using System.Runtime.Serialization;
+using MegaCrit.Sts2.Core.Localization;
+using MegaCrit.Sts2.Core.Localization.DynamicVars;
+using SmartFormat.Core.Extensions;
+using IFormatter = SmartFormat.Core.Extensions.IFormatter;
+
+namespace GamblerMod.GamblerModCode.Formatters;
+
+public class DiceIconsFormatter : IFormatter
+{
+    // private const string _diceIconPath = "GamblerMod/images/icons/dice_icon.png";
+    private const string diceIconSprite = "[img]GamblerMod/images/icons/dice_icon.png[/img]";
+
+    public string Name
+    {
+        get => "diceIcons";
+        set => throw new NotImplementedException();
+    }
+
+    public bool CanAutoDetect { get; set; }
+
+    public bool TryEvaluateFormat(IFormattingInfo formattingInfo)
+    {
+        int count;
+        switch (formattingInfo.CurrentValue)
+        {
+            case DynamicVar dynamicVar:
+                count = (int) dynamicVar.PreviewValue;
+                break;
+            case Decimal num1:
+                count = (int) num1;
+                break;
+            case int num2:
+                count = num2;
+                break;
+            default:
+                throw new LocException($"Unknown value='{formattingInfo.CurrentValue}' type={formattingInfo.CurrentValue?.GetType()}");
+        }
+
+        string text;
+        if (count >= 0)
+        {
+            text = $"{count}";
+        }
+        else
+        {
+            text = diceIconSprite;
+        }
+        // string text = string.Concat(Enumerable.Repeat<string>("[img]GamblerMod/images/icons/dice_icon.png[/img]", count));
+        formattingInfo.Write(text);
+        return true;
+    }
+}

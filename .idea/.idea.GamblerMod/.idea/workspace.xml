@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a5d18ba-b697-4059-8ee6-8a82d5390a64" name="Changes" comment="" />
+    <list default="true" id="7a5d18ba-b697-4059-8ee6-8a82d5390a64" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/GamblerMod/images/icons/dice_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Formatters/DiceIconsFormatter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceRoll.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceVar.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Patches/LocManagerPatch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache10" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GamblerMod/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamblerMod/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerMod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerMod.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerMod/localization/eng/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerMod/localization/eng/cards.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Character/GamblerMod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Character/GamblerMod.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +23,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8f86803fa40542e58149415cb140c10c3b400/82/e083e6a3/ConstructedCardModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/18/5880dc02/Rng.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/1b/ba4001fd/StarIconsFormatter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/28/6ac6e91f/ValueProp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/37/a8de3f63/CalculatedVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/3d/d7af99ce/_003C_003Ez__ReadOnlySingleElementList`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/43/4d4c721e/CardModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/48/581d234f/SharedFate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/48/e6a3d842/CalculatedBlockVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/55/b53ffd5f/CalculatedDamageVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/67/e8d21474/StrikeIronclad.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/80/8ca76601/LocManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/87/7c70ce94/HighlightDifferencesFormatter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/8d/54186a8b/DamageVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/98/bc6383ed/StrikeDefect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/a9/59c2d3cc/IntVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/d9/0b86c210/DynamicVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/e5/31080ae3/DynamicVarSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamblerModCode/Mechanics/DiceRoll.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamblerModCode/Patches/LocManagerPatch.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 2
 }]]></component>
   <component name="ProjectId" id="3BTQuskIz0YnMSdDCmIhQw5lE3z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,6 +65,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "RiderCSharpFileTemplatesSettingsId",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -45,16 +86,28 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774510807720</updated>
-      <workItem from="1774510809026" duration="954000" />
+      <workItem from="1774510809026" duration="12877000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit.">
+      <option name="closed" value="true" />
+      <created>1774511888048</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774511888048</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial commit." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -73,5 +126,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

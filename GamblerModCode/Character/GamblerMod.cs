@@ -1,4 +1,5 @@
 ﻿using BaseLib.Abstracts;
+using GamblerMod.GamblerModCode.Cards;
 using GamblerMod.GamblerModCode.Extensions;
 using Godot;
 using MegaCrit.Sts2.Core.Entities.Characters;
@@ -20,6 +21,7 @@ public class GamblerMod : PlaceholderCharacterModel
 
     public override IEnumerable<CardModel> StartingDeck =>
     [
+        ModelDb.Card<GamblerStrike>(),
         ModelDb.Card<StrikeIronclad>(),
         ModelDb.Card<StrikeIronclad>(),
         ModelDb.Card<StrikeIronclad>(),

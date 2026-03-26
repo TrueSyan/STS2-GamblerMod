@@ -32,7 +32,7 @@
 
         <!-- The below should not need to be changed. -->
         <Sts2Path>$(SteamLibraryPath)/common/Slay the Spire 2</Sts2Path>
-        <ModsPath>$(Sts2Path)/mods (staged)/</ModsPath>
+        <ModsPath>$(Sts2Path)/mods/</ModsPath>
         <Sts2DataDir>$(Sts2Path)/data_sts2_windows_x86_64</Sts2DataDir>
     </PropertyGroup>
 
@@ -71,6 +71,10 @@
         </Reference>
         <Reference Include="sts2">
             <HintPath>$(Sts2DataDir)/sts2.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="SmartFormat">
+            <HintPath>$(Sts2DataDir)/SmartFormat.dll</HintPath>
             <Private>false</Private>
         </Reference>
     </ItemGroup>

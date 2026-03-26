@@ -1,3 +1,4 @@
 {
-  
+  "GAMBLERMOD-GAMBLER_STRIKE.description": "Deal {Damage:diff()} + {Dice:diceIcons()} damage.",
+  "GAMBLERMOD-GAMBLER_STRIKE.title": "GamblerStrike"
 }
