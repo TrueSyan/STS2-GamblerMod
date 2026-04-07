@@ -6,6 +6,21 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <DefaultItemExcludes>packages/**</DefaultItemExcludes>
         <AppOutputBase>$(MSBuildProjectDirectory)\</AppOutputBase>
+<!--        <PathMap>$(AppOutputBase)=.\</PathMap>-->
+        <!-- Hot Reloading -->
+        <OutputPath>bin\$(Configuration)\</OutputPath>
+        <RootNamespace>GamblerMod</RootNamespace>
+    </PropertyGroup>
+
+    <!-- Hot Reloading -->
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+        <Optimize>false</Optimize>
+        <DebugType>portable</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+        <Optimize>true</Optimize>
+        <DebugType>none</DebugType>
         <PathMap>$(AppOutputBase)=.\</PathMap>
     </PropertyGroup>
 
@@ -80,7 +95,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="*" PrivateAssets="All"/>
+        <PackageReference Include="Alchyr.Sts2.BaseLib" Version="0.2.7" PrivateAssets="All" />
         <PackageReference Include="Alchyr.Sts2.ModAnalyzers" Version="*"/>
         <AdditionalFiles Include="GamblerMod/localization/**/*.json"/>
     </ItemGroup>
@@ -104,6 +119,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <Folder Include="GamblerModCode\Events\" />
         <Folder Include="GamblerMod\images\card_portraits\big\"/>
         <Folder Include="GamblerMod\images\powers\big\"/>
         <Folder Include="GamblerMod\images\relics\big\"/>
@@ -127,6 +143,10 @@
             <BaseLibFiles Include="$(NuGetPackageRoot)/alchyr.sts2.baselib/**/lib/**/BaseLib.dll;$(NuGetPackageRoot)/alchyr.sts2.baselib/**/Content/BaseLib.pck;$(NuGetPackageRoot)/alchyr.sts2.baselib/**/Content/BaseLib.json;"/>
         </ItemGroup>
         <Copy SourceFiles="@(BaseLibFiles)" DestinationFolder="$(ModsPath)BaseLib/"/>
+        <!-- Hot Reloading -->
+        <Copy SourceFiles="$(TargetDir)$(TargetName).pdb"
+              DestinationFolder="$(ModsPath)$(MSBuildProjectName)/"
+              Condition="Exists('$(TargetDir)$(TargetName).pdb')" />
     </Target>
 
     <Target Name="GodotPublish" AfterTargets="Publish" Condition="'$(GodotPath)' != '' and Exists('$(GodotPath)') and '$(IsInnerGodotExport)' != 'true'">

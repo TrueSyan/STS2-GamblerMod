@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a5d18ba-b697-4059-8ee6-8a82d5390a64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GamblerMod/images/icons/dice_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Formatters/DiceIconsFormatter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceRoll.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceVar.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Patches/LocManagerPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Core/GamblerModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache10" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/exported/133200997/file_cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/exported/133200997/file_cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamblerMod/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamblerMod/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamblerMod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerMod.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerMod/localization/eng/cards.json" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerMod/localization/eng/cards.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerModCode/Character/GamblerMod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Character/GamblerMod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Extensions/StringExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Extensions/StringExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Formatters/DiceIconsFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Formatters/DiceIconsFormatter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceRoll.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceVar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceVar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +26,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1c378f459c054fecaf4484a0fa6d44c055a800/18/8569e4a7/VariantUtils.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8f86803fa40542e58149415cb140c10c3b400/82/e083e6a3/ConstructedCardModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/17/d7b74fbc/Wisp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/18/5880dc02/Rng.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/19/731ebcfb/NInspectCardScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/1b/ba4001fd/StarIconsFormatter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/28/6ac6e91f/ValueProp.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/37/a8de3f63/CalculatedVar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -34,22 +39,32 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/48/581d234f/SharedFate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/48/e6a3d842/CalculatedBlockVar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/55/b53ffd5f/CalculatedDamageVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/62/662785a9/ModHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/62/92e068fa/NCreature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/67/e8d21474/StrikeIronclad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/80/8ca76601/LocManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/87/7c70ce94/HighlightDifferencesFormatter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/8d/54186a8b/DamageVar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/98/bc6383ed/StrikeDefect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/a9/59c2d3cc/IntVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/b3/06e0553c/NCombatRoom.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/d9/0b86c210/DynamicVar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/d9/2699f724/NTargetManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/e5/31080ae3/DynamicVarSet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/e9/f2c5fca8/Hook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/5f/0147447b/AbstractModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/81/908b512e/CombatManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/95/2f2bbe25/ModelId.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/e9/802bb320/ModelDb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3c92637ae2e83da0a63791071c41eae291d594156062866d8621b7ed7245c/CastHelpers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GamblerModCode/Mechanics/DiceRoll.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamblerModCode/Patches/LocManagerPatch.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3BTQuskIz0YnMSdDCmIhQw5lE3z" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -60,8 +75,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Executable.STS2_Debug.executor": "Run",
     "Publish to folder.Publish GamblerMod to folder.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
@@ -69,15 +86,74 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Executable.STS2_Debug">
     <configuration name="Publish GamblerMod to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
-      <riderPublish configuration="ExportRelease" platform="Any CPU" target_folder="$PROJECT_DIR$/bin/ExportRelease/net9.0/publish" target_framework="net9.0" uuid_high="-5046335690309023847" uuid_low="-6927024653489350355">
-        <runtimes>
-          <item value="Portable" />
-        </runtimes>
-      </riderPublish>
+      <riderPublish configuration="ExportRelease" platform="Any CPU" target_folder="$PROJECT_DIR$/bin/ExportRelease/net9.0/publish" target_framework="net9.0" uuid_high="-5046335690309023847" uuid_low="-6927024653489350355" />
       <method v="2" />
     </configuration>
+    <configuration name="Debug GDScript (Running session)" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory">
+      <option name="json" value="{&#10;  // Launch: &quot;Launch a new instance of the game&quot;,&#10;  // Attach: &quot;Attach to an already running game, which was started from the Godot Editor&quot;&#10;  &quot;request&quot; : &quot;Attach&quot;,&#10;  &quot;debugServer&quot; : 6006, // port should match the Debug Adapter port in the Godot Editor project settings.&#10;  &quot;scene&quot; : &quot;main&quot;, // main, current, res://path/to/file.tscn&#10;  &#10;  // &quot;playArgs&quot; : [ &quot;--editor&quot; ], // debugging a tool script&#10;  // &quot;playArgs&quot;: [&quot;--debug-collisions&quot;,&quot;--debug-navigation&quot;], // different options&#10;  &#10;  // one click deploy and debug via Godot Editor:&#10;  // &quot;platform&quot;: &quot;Android&quot;, // including Android, iOS, Web and W4 consoles&#10;  // &quot;device&quot;: &quot;0&quot;, // index of the device of a &quot;platform&quot; type&#10;}" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Player GDScript" type="GDSCRIPT_DEBUG_RUN_CONFIGURATION" factoryName="GdScriptRunFactory">
+      <option name="json" value="{&#10;  // Launch: &quot;Launch a new instance of the game&quot;,&#10;  // Attach: &quot;Attach to an already running game, which was started from the Godot Editor&quot;&#10;  &quot;request&quot; : &quot;Launch&quot;,&#10;  &quot;debugServer&quot; : 6006, // port should match the Debug Adapter port in the Godot Editor project settings.&#10;  &quot;scene&quot; : &quot;main&quot;, // main, current, res://path/to/file.tscn&#10;  &#10;  // &quot;playArgs&quot; : [ &quot;--editor&quot; ], // debugging a tool script&#10;  // &quot;playArgs&quot;: [&quot;--debug-collisions&quot;,&quot;--debug-navigation&quot;], // different options&#10;  &#10;  // one click deploy and debug via Godot Editor:&#10;  // &quot;platform&quot;: &quot;Android&quot;, // including Android, iOS, Web and W4 consoles&#10;  // &quot;device&quot;: &quot;0&quot;, // index of the device of a &quot;platform&quot; type&#10;}" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Editor" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../_Godot/megadot-4.5.1-m.9-windows-x86_64-llvm-editor-csharp/MegaDot_v4.5.1-stable_mono_win64.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot; --editor" />
+      <option name="WORKING_DIRECTORY" value="D:\development\game development\STS Modding\GamblerMod" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Player" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../_Godot/megadot-4.5.1-m.9-windows-x86_64-llvm-editor-csharp/MegaDot_v4.5.1-stable_mono_win64.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;./&quot;" />
+      <option name="WORKING_DIRECTORY" value="D:\development\game development\STS Modding\GamblerMod" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="RUNTIME_TYPE" value="coreclr" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="STS2_Debug" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../SteamLibrary/steamapps/common/Slay the Spire 2/SlayTheSpire2.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../SteamLibrary/steamapps/common/Slay the Spire 2" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <method v="2">
+        <option name="Build" default="false" projectName="GamblerMod" projectPath="$PROJECT_DIR$/GamblerMod.csproj" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Executable.STS2_Debug" />
+      <item itemvalue=".NET Executable.Editor" />
+      <item itemvalue=".NET Executable.Player" />
+      <item itemvalue="GdScript Start and Debug.Debug GDScript (Running session)" />
+      <item itemvalue="GdScript Start and Debug.Player GDScript" />
+      <item itemvalue="Publish to folder.Publish GamblerMod to folder" />
+    </list>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,7 +162,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774510807720</updated>
-      <workItem from="1774510809026" duration="12877000" />
+      <workItem from="1774510809026" duration="13208000" />
+      <workItem from="1774661826154" duration="2698000" />
+      <workItem from="1774676426961" duration="4763000" />
+      <workItem from="1774928833689" duration="2263000" />
+      <workItem from="1774966712306" duration="882000" />
+      <workItem from="1775003819582" duration="1459000" />
+      <workItem from="1775005328232" duration="6460000" />
+      <workItem from="1775276433678" duration="1222000" />
+      <workItem from="1775489942755" duration="2511000" />
+      <workItem from="1775521488866" duration="7701000" />
+      <workItem from="1775562848436" duration="8962000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -96,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774511888048</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added dice icon formatter patch">
+      <option name="closed" value="true" />
+      <created>1774527964384</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1774527964384</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +201,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="Added dice icon formatter patch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dice icon formatter patch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

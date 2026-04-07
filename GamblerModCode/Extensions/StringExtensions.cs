@@ -42,4 +42,9 @@ public static class StringExtensions
     {
         return Path.Join(MainFile.ModId, "images", "charui", path);
     }
+
+    public static string DiceUiPath(this string path)
+    {
+        return Path.Join(MainFile.ModId, "images", "dice", path);
+    }
 }

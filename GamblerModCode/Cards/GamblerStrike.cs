@@ -25,7 +25,11 @@ public class GamblerStrike() : GamblerModCard(1,
     {
         GamblerStrike card = this;
         ArgumentNullException.ThrowIfNull((object) cardPlay.Target, "cardPlay.Target");
-        AttackCommand attackCommand = await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card).Targeting(cardPlay.Target).WithHitFx("vfx/vfx_attack_slash").Execute(choiceContext);
+        AttackCommand attackCommand = await DamageCmd.Attack(card.DynamicVars.Damage.BaseValue).FromCard((CardModel) card)
+            .Targeting(cardPlay.Target)
+            .WithHitFx("vfx/vfx_attack_slash")
+            .WithHitCount(1)
+            .Execute(choiceContext);
     }
 
     protected override void OnUpgrade()

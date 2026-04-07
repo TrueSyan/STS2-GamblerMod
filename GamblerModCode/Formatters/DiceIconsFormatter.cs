@@ -1,5 +1,4 @@
-﻿using System.Runtime.Serialization;
-using MegaCrit.Sts2.Core.Localization;
+﻿using MegaCrit.Sts2.Core.Localization;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using SmartFormat.Core.Extensions;
 using IFormatter = SmartFormat.Core.Extensions.IFormatter;
@@ -38,14 +37,15 @@ public class DiceIconsFormatter : IFormatter
         }
 
         string text;
-        if (count >= 0)
-        {
-            text = $"{count}";
-        }
-        else
-        {
-            text = diceIconSprite;
-        }
+        text = $"{count}";
+        // if (count >= 0)
+        // {
+        //     text = $"{count}";
+        // }
+        // else
+        // {
+        //     text = diceIconSprite;
+        // }
         // string text = string.Concat(Enumerable.Repeat<string>("[img]GamblerMod/images/icons/dice_icon.png[/img]", count));
         formattingInfo.Write(text);
         return true;

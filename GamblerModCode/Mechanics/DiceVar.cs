@@ -32,6 +32,6 @@ public class DiceVar: DynamicVar
         Creature? target,
         bool runGlobalHooks)
     {
-        this.PreviewValue = -1;
+        // this.PreviewValue = 4;
     }
 }
