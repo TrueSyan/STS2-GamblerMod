@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5d18ba-b697-4059-8ee6-8a82d5390a64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Core/GamblerModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Core/GamblerManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Powers/DicePlaceholderPower.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache10" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache10" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/exported/133200997/file_cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/exported/133200997/file_cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamblerMod/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamblerMod/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamblerMod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerMod.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerModCode/Extensions/StringExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Extensions/StringExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerModCode/Formatters/DiceIconsFormatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Formatters/DiceIconsFormatter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceRoll.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceVar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Mechanics/DiceVar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerMod/localization/eng/powers.json" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerMod/localization/eng/powers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Core/GamblerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Core/GamblerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1c378f459c054fecaf4484a0fa6d44c055a800/18/8569e4a7/VariantUtils.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1c378f459c054fecaf4484a0fa6d44c055a800/18/8569e4a7/VariantUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8f86803fa40542e58149415cb140c10c3b400/82/e083e6a3/ConstructedCardModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/17/d7b74fbc/Wisp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/18/5880dc02/Rng.cs" root0="FORCE_HIGHLIGHTING" />
@@ -52,10 +53,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/d9/2699f724/NTargetManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/e5/31080ae3/DynamicVarSet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/e9/f2c5fca8/Hook.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/4a/b955b371/NodeUtil.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/5f/0147447b/AbstractModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/81/908b512e/CombatManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/95/2f2bbe25/ModelId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a5a07b662ccf483795120f27d669772a89b400/e9/802bb320/ModelDb.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b37cfebc5f5e4c979f209f07265d6e4c8a1800/32/d4c8ec7c/SneckoEye.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b37cfebc5f5e4c979f209f07265d6e4c8a1800/f9/c1eb8083/Inferno.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3c92637ae2e83da0a63791071c41eae291d594156062866d8621b7ed7245c/CastHelpers.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" root0="FORCE_HIGHLIGHTING" />
@@ -82,7 +86,12 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "RiderCSharpFileTemplatesSettingsId",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "consents",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -172,7 +181,9 @@
       <workItem from="1775276433678" duration="1222000" />
       <workItem from="1775489942755" duration="2511000" />
       <workItem from="1775521488866" duration="7701000" />
-      <workItem from="1775562848436" duration="8962000" />
+      <workItem from="1775562848436" duration="10804000" />
+      <workItem from="1775698904512" duration="142000" />
+      <workItem from="1775961371038" duration="718000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -190,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774527964384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added dice tray to show up on turn start">
+      <option name="closed" value="true" />
+      <created>1775579351847</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1775579351847</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +221,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Added dice icon formatter patch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dice icon formatter patch" />
+    <MESSAGE value="Added dice tray to show up on turn start" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dice tray to show up on turn start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
