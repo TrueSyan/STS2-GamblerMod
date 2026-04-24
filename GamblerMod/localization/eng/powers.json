@@ -1,5 +1,5 @@
 {
-  "GAMBLERMOD-DICE_PLACEHOLDER_POWER.description": "",
-  "GAMBLERMOD-DICE_PLACEHOLDER_POWER.smartDescription": "",
+  "GAMBLERMOD-DICE_PLACEHOLDER_POWER.description": "A die in the dice tray. At the start of each turn, the first die is removed and a new one is added.",
+  "GAMBLERMOD-DICE_PLACEHOLDER_POWER.smartDescription": "A die with the value [blue]{Amount}[/blue]. At the start of each turn, the first die is removed and a new one is added.",
   "GAMBLERMOD-DICE_PLACEHOLDER_POWER.title": "DicePlaceholderPower"
 }

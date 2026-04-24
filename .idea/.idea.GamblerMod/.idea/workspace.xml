@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a5d18ba-b697-4059-8ee6-8a82d5390a64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Core/GamblerManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GamblerModCode/Powers/DicePlaceholderPower.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamblerModCode/Core/DiceTray.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/editor/filesystem_cache10" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/filesystem_cache10" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/editor/project_metadata.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/exported/133200997/file_cache" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/exported/133200997/file_cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/global_script_class_cache.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.godot/uid_cache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.godot/uid_cache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GamblerMod/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GamblerMod/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamblerMod.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerMod.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerMod/localization/eng/powers.json" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerMod/localization/eng/powers.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Core/GamblerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Core/GamblerManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamblerModCode/Core/GamblerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Core/GamblerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamblerModCode/Powers/DicePlaceholderPower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GamblerModCode/Powers/DicePlaceholderPower.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +24,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1c378f459c054fecaf4484a0fa6d44c055a800/18/8569e4a7/VariantUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/09/26d1a360/JeweledMask.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/6d/5683f5e9/CardKeyword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/70/1e6766a2/ChoicesParadox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/8f/3f9771fb/Assassinate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/90/b841cc0e/ModelId.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/94/9e6a29e4/Creature.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/9e/87141148/Flanking.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/ab/92e4b7b2/PowerCmd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/b3/5be513eb/FlankingPower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/623673a32f6a4e15a5604f44f22978678a2200/c1/6ecb709a/VakuuCardSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/777fb01d6647409f89cefc157f9924d189c00/a9/2e98accf/StringExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8f86803fa40542e58149415cb140c10c3b400/82/e083e6a3/ConstructedCardModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/17/d7b74fbc/Wisp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9a7f2ce289af4f4095792fcf3e0f69e587c000/18/5880dc02/Rng.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,7 +68,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b37cfebc5f5e4c979f209f07265d6e4c8a1800/32/d4c8ec7c/SneckoEye.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b37cfebc5f5e4c979f209f07265d6e4c8a1800/f9/c1eb8083/Inferno.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3c92637ae2e83da0a63791071c41eae291d594156062866d8621b7ed7245c/CastHelpers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bc14b6df5cd75368b65afefb4bd2493c9facd3bbb41af2b1d0eab7e8eee87dbf/First.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c8fa4499ff8b7cbd3e36ba3e6ce5c12c72231d2d96f8abab1aedc1f83ec1942/TextInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e75a5575ba872c8ea754c015cb363850e6c661f39569712d5b74aaca67263c/String.Manipulation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamblerModCode/Cards/GamblerStrike.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GamblerModCode/Core/DiceTray.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamblerModCode/Patches/DiceTrayPatch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GamblerModCode/Patches/LocManagerPatch.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -183,7 +194,8 @@
       <workItem from="1775521488866" duration="7701000" />
       <workItem from="1775562848436" duration="10804000" />
       <workItem from="1775698904512" duration="142000" />
-      <workItem from="1775961371038" duration="718000" />
+      <workItem from="1775961371038" duration="1510000" />
+      <workItem from="1777011827402" duration="5979000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -209,7 +221,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775579351847</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added a placeholder power for dice rolls">
+      <option name="closed" value="true" />
+      <created>1775962175749</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1775962175749</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +242,8 @@
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Added dice icon formatter patch" />
     <MESSAGE value="Added dice tray to show up on turn start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dice tray to show up on turn start" />
+    <MESSAGE value="Added a placeholder power for dice rolls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a placeholder power for dice rolls" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
