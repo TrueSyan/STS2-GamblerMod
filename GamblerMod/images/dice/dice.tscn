@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ci6qqs4qlgpnp"]
+
+[ext_resource type="Script" uid="uid://c285cdxi211ji" path="res://GamblerMod/code/dice_roll.gd" id="1_e5xae"]
+[ext_resource type="PackedScene" uid="uid://clx45wbf07rr5" path="res://GamblerMod/images/dice/dice.glb" id="2_cw2ul"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fs0iv"]
+size = Vector3(2, 2, 2)
+
+[node name="Dice" type="RigidBody3D"]
+gravity_scale = 2.0
+freeze = true
+script = ExtResource("1_e5xae")
+
+[node name="Model" parent="." instance=ExtResource("2_cw2ul")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_fs0iv")

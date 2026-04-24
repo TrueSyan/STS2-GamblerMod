@@ -1,0 +1,117 @@
+[gd_scene load_steps=10 format=3 uid="uid://crhm42yun4mbw"]
+
+[ext_resource type="Texture2D" uid="uid://dakfhyc2vhwxp" path="res://GamblerMod/images/dice/bg3_dice_bg.png" id="1_d7c1p"]
+[ext_resource type="PackedScene" uid="uid://ci6qqs4qlgpnp" path="res://GamblerMod/images/dice/dice.tscn" id="2_bfy2i"]
+[ext_resource type="Script" uid="uid://dcjmk18en4f2" path="res://GamblerMod/dice/dice.gd" id="3_d7c1p"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_bfy2i"]
+viewport_path = NodePath("Camera")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d6bml"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bfy2i"]
+size = Vector3(10, 10, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d7c1p"]
+size = Vector3(10, 10, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1g4fs"]
+size = Vector3(1, 10, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2t6my"]
+size = Vector3(1, 10, 10)
+
+[node name="DiceTrayUI" type="Control"]
+self_modulate = Color(18.892157, 0, 18.892157, 0.3647059)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Render" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="Render"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_d7c1p")
+
+[node name="DiceRender" type="TextureRect" parent="Render"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ViewportTexture_bfy2i")
+stretch_mode = 4
+
+[node name="DiceTray3D" type="Node3D" parent="."]
+
+[node name="Box" type="StaticBody3D" parent="DiceTray3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="DiceTray3D/Box"]
+shape = SubResource("BoxShape3D_d6bml")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="DiceTray3D/Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 5)
+shape = SubResource("BoxShape3D_bfy2i")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="DiceTray3D/Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, -5)
+shape = SubResource("BoxShape3D_d7c1p")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="DiceTray3D/Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, 0)
+shape = SubResource("BoxShape3D_1g4fs")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="DiceTray3D/Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 5, 0)
+shape = SubResource("BoxShape3D_2t6my")
+
+[node name="CollisionShape3D6" type="CollisionShape3D" parent="DiceTray3D/Box"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+shape = SubResource("BoxShape3D_d6bml")
+
+[node name="DiceSpawnPoint" type="Node3D" parent="DiceTray3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
+
+[node name="Dice" parent="DiceTray3D/DiceSpawnPoint" instance=ExtResource("2_bfy2i")]
+script = ExtResource("3_d7c1p")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="DiceTray3D"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+
+[node name="Camera" type="SubViewport" parent="."]
+transparent_bg = true
+size = Vector2i(400, 400)
+
+[node name="Camera3D" type="Camera3D" parent="Camera"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 15, 0)
+projection = 1
+size = 10.0
