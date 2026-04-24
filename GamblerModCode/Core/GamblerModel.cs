@@ -1,4 +1,5 @@
 ﻿using BaseLib.Abstracts;
+using BaseLib.Utils;
 using GamblerMod.GamblerModCode.Patches;
 using Godot;
 using MegaCrit.Sts2.Core.Combat;
@@ -10,30 +11,17 @@ namespace GamblerMod.GamblerModCode.Core;
 
 public class GamblerModel() : CustomSingletonModel(receiveCombatHooks: true, receiveRunHooks: false)
 {
-    // public override Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
-    // {
-    //     // if (DiceTrayPatch.diceTray != null)
-    //     // {
-    //     //     Roll the dice on screen
-    //     //     DiceTrayPatch.diceTray.Visible = true;
-    //     //     foreach (RigidBody3D dice in DiceTrayPatch.diceTray.GetChildrenRecursive<RigidBody3D>())
-    //     //     {
-    //     //         dice.Call("roll");
-    //     //     }
-    //     // }
-    //     GamblerManager.DiceRoll(player);   
-    //     return base.AfterPlayerTurnStart(choiceContext, player);
-    // }
-
+    public static readonly SpireField<Player, DiceTray> DiceTray = new (player => new DiceTray(player));
+    
     public override Task BeforeHandDraw(Player player, PlayerChoiceContext choiceContext, CombatState combatState)
     {
         if (combatState.RoundNumber > 1)
         {
-            GamblerManager.diceTray.Remove(player, 1);
+            DiceTray.Get(player)?.Remove();
             return base.BeforeHandDraw(player, choiceContext, combatState);
         }
         
-        GamblerManager.diceTray.Populate(player);
+        DiceTray.Get(player)?.Repopulate();
         return base.BeforeHandDraw(player, choiceContext, combatState);
     }
 }

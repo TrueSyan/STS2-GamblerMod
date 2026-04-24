@@ -36,8 +36,8 @@ public class DiceIconsFormatter : IFormatter
                 throw new LocException($"Unknown value='{formattingInfo.CurrentValue}' type={formattingInfo.CurrentValue?.GetType()}");
         }
 
-        string text;
-        text = $"{count}";
+        // string text;
+        // text = $"{count}";
         // if (count >= 0)
         // {
         //     text = $"{count}";
@@ -46,7 +46,7 @@ public class DiceIconsFormatter : IFormatter
         // {
         //     text = diceIconSprite;
         // }
-        // string text = string.Concat(Enumerable.Repeat<string>("[img]GamblerMod/images/icons/dice_icon.png[/img]", count));
+        string text = string.Concat(Enumerable.Repeat<string>("[img]GamblerMod/images/icons/dice_icon.png[/img]", count));
         formattingInfo.Write(text);
         return true;
     }

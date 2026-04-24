@@ -9,29 +9,12 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace GamblerMod.GamblerModCode.Mechanics;
 
-public class DiceVar: DynamicVar
+public class DiceVar(string name, int dice) : DynamicVar(name, (Decimal) dice)
 {
     public const string defaultName = "Dice";
-    public ValueProp Props { get; set; }
     
-    public DiceVar(Decimal amount, ValueProp props)
-        : base("Dice", amount)
+    public DiceVar(int dice)
+        : this("Dice", dice)
     {
-        this.Props = props;
-    }
-
-    public DiceVar(string name, Decimal amount, ValueProp props)
-        : base(name, amount)
-    {
-        this.Props = props;
-    }
-    
-    public override void UpdateCardPreview(
-        CardModel card,
-        CardPreviewMode previewMode,
-        Creature? target,
-        bool runGlobalHooks)
-    {
-        // this.PreviewValue = 4;
     }
 }
